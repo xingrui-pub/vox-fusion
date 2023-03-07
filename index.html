@@ -19,26 +19,26 @@
 
 <body>
     <div class="content m-3">
-        <div class="title text-center display-4 mb-5">Vox-Fusion: Dense Tracking and Mapping with Voxel-based Neural
+        <div class="title text-center display-5 mb-5">Vox-Fusion: Dense Tracking and Mapping with Voxel-based Neural
             Implicit Representation
         </div>
 
         <div class="authors d-flex flex-wrap justify-content-center">
-            <div class="text-center px-2 h3"><a href="https://yangxingrui.com">*Xingrui Yang</a><sup>1</sup></div>
-            <div class="text-center px-2 h3"><a href="https://garylidd.github.io/">*Hai Li</a><sup>1</sup> </div>
-            <div class="text-center px-2 h3"><a href="https://zhaihongjia.github.io/">Hongjia Zhai</a><sup>1</sup>
+            <div class="text-center px-2 h4"><a href="https://yangxingrui.com">*Xingrui Yang</a><sup>1</sup></div>
+            <div class="text-center px-2 h4"><a href="https://garylidd.github.io/">*Hai Li</a><sup>1</sup> </div>
+            <div class="text-center px-2 h4"><a href="https://zhaihongjia.github.io/">Hongjia Zhai</a><sup>1</sup>
             </div>
-            <div class="text-center px-2 h3"> <a>Yuhang Ming</a><sup>2</sup></div>
-            <div class="text-center px-2 h3"><a>Yuqian Liu</a><sup>3</sup> </div>
-            <div class="text-center px-2 h3"><a
+            <div class="text-center px-2 h4"> <a href="https://yuhangming.github.io/">Yuhang Ming</a><sup>2</sup></div>
+            <div class="text-center px-2 h4"><a>Yuqian Liu</a><sup>3</sup> </div>
+            <div class="text-center px-2 h4"><a
                     href="http://www.cad.zju.edu.cn/home/gfzhang/">GuofengZhang</a><sup>1</sup></div>
         </div>
 
         <div class="text-center px-2 h4 mb-3"><em>*equal contribution</em></div>
         <div class="affiliations d-flex flex-wrap justify-content-center pt-2">
-            <div class="text-center mx-2 h3"><sup>1</sup>State Key Lab of CAD&CG, Zhejiang University, China</div>
-            <div class="text-center mx-2 h3"><sup>2</sup>University of Bristol, UK</div>
-            <div class="text-center mx-2 h3"><sup>3</sup>Autonomous Driving Group, SenseTime</div>
+            <div class="text-center mx-2 h4"><sup>1</sup>State Key Lab of CAD&CG, Zhejiang University, China</div>
+            <div class="text-center mx-2 h4"><sup>2</sup>University of Bristol, UK</div>
+            <div class="text-center mx-2 h4"><sup>3</sup>Autonomous Driving Group, SenseTime</div>
         </div>
 
         <div class="links d-flex flex-wrap justify-content-center pt-1">
@@ -56,23 +56,6 @@
             <p>Our Vox-Fusion uses a explicit sparse voxel grid representation to reconstruct dense geometry and color
                 from
                 RGB-D images.</p>
-        </div>
-
-        <div class="abstract pt-5 justify-content-center">
-            <div class="text-center h2">Correction</div>
-            <p class="text-bold">
-                <b>
-                    We found a bug in the evaluation script which affected the estimated pose accuracy in Tables 1 and 3
-                    in the original paper. We have corrected this problem and re-run the results with newly tuned
-                    parameters. The corrected results are comparable (even better for Replica dataset) to the originally
-                    reported results in the paper, which do not affect the contribution and conclusion of our work. We
-                    have updated the arxiv version of our paper and publish all the
-                    latest results (including mesh, pose, gt, eval scripts and training configs) on
-                    <a
-                        href="https://zjueducn-my.sharepoint.com/:f:/g/personal/garyli_zju_edu_cn/EgEhBqp29R1Gl6kREj88nQ4BAzS_ezOFtiub6ZsvywO4og?e=QoRpr5">OneDrive</a>,
-                    in case anyone wants to reproduce our results and compare them using different metrics.
-                </b>
-            </p>
         </div>
 
         <div class="abstract pt-5 justify-content-center">
@@ -108,6 +91,25 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
+        </div>
+
+        <div class="abstract pt-5 justify-content-center">
+            <div class="text-center h2">Correction</div>
+            <p class="text-bold">
+                <b>
+                    We found a bug in the evaluation script which affected the estimated pose accuracy in Tables 1 and 3
+                    in the original paper. We have corrected this problem and re-run the results with newly tuned
+                    parameters. The corrected results are comparable (even better for Replica dataset) to the originally
+                    reported results in the paper, which do not affect the contribution and conclusion of our work. We
+                    have updated the arxiv version of our paper and publish all the
+                    latest results (including mesh, pose, gt, eval scripts and training configs) on
+                    <a
+                        href="https://zjueducn-my.sharepoint.com/:f:/g/personal/garyli_zju_edu_cn/EgEhBqp29R1Gl6kREj88nQ4BAzS_ezOFtiub6ZsvywO4og?e=QoRpr5">OneDrive</a>,
+                    in case anyone wants to reproduce our results and compare them using different metrics. You can also find the updated Table 1&3 below.
+                </b>
+            </p>
+            <img class="img-fluid" src="assets/imgs/pose_replica.png"/>
+            <img class="img-fluid mx-auto d-block" src="assets/imgs/pose_scannet.png"/>
         </div>
 
         <div class="bibtex mt-5">
